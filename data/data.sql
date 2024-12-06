@@ -8,3 +8,8 @@ CREATE TABLE userinter (
     PRIMARY KEY (id),
     UNIQUE KEY email (email)
 );
+
+
+
+-- El producto llevaria:
+-- nombre, descripcion, categoria, usuario, fecha, estado.  
