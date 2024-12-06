@@ -166,7 +166,7 @@ export class AuthService {
     }
 
     if (correo == "verificacion") {
-      url = `https://truequemania.netlify.app/password?token=${token}`;
+      url = `https://truequemania.netlify.app/actualizacion?token=${token}`;
       filePath = path.resolve(process.cwd(), 'src/auth/html/plantilla.html');
     }
 
