@@ -12,4 +12,4 @@ CREATE TABLE userinter (
 
 
 -- El producto llevaria:
--- nombre, descripcion, categoria, usuario, fecha, estado.  
+-- nombre, descripcion, categoria, usuario, fecha, estado, imagen
