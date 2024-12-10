@@ -9,7 +9,16 @@ CREATE TABLE userinter (
     UNIQUE KEY email (email)
 );
 
-
-
--- El producto llevaria:
--- nombre, descripcion, categoria, usuario, fecha, estado, imagen
+CREATE TABLE articulosinter (
+    id INT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(255) NOT NULL, 
+    descripcion TEXT NOT NULL, 
+    categoria VARCHAR(255) NOT NULL, 
+    name VARCHAR(500) NOT NULL,
+    email VARCHAR(255) NOT NULL, 
+    fecha DATETIME DEFAULT CURRENT_TIMESTAMP,
+    estado VARCHAR(255) NOT NULL, 
+    imagen VARCHAR(500), 
+    PRIMARY KEY (id),
+    UNIQUE KEY nombre (nombre)
+);

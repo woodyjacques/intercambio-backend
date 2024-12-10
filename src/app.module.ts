@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
+import { ArticulosModule } from './articulos/articulos.module';
 import 'dotenv/config';
 
 console.log(process.env.DB_HOST);
@@ -24,7 +25,8 @@ console.log(process.env.DB_HOST);
       ssl: { rejectUnauthorized: false },
     }),
     AuthModule,
-    UsersModule
+    UsersModule,
+    ArticulosModule
   ],
 })
 export class AppModule { }

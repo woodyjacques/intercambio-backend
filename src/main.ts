@@ -40,7 +40,7 @@ async function bootstrap() {
 
   useContainer(app.select(AppModule), { fallbackOnErrors: true });
 
-  const port = 4000; 
+  const port = 4001; 
   app.useStaticAssets(path.join(__dirname, '../uploads'));
   await app.listen(port);
 
